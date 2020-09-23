@@ -1,3 +1,18 @@
-import { grapql } from "graphql";
+import { graphql } from "graphql";
+import schema from "./schema/";
 
-console.log("hi");
+const query = `
+    {
+        posts {
+            title
+        }
+    }
+`;
+
+graphql(schema, query)
+  .then((result) => {
+    console.log(JSON.stringify(result, null, 2));
+  })
+  .catch((error) => {
+    console.log(error);
+  });

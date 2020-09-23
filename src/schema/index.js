@@ -1,5 +1,4 @@
 const { GraphQLSchema, GraphQLObjectType } = require("graphql");
-import posts from "./queries/post";
 import author from "./queries/author";
 import posts from "./queries/posts";
 import post from "./queries/post";
@@ -24,3 +23,5 @@ const schema = new GraphQLSchema({
     }),
   }),
 });
+
+export default schema;

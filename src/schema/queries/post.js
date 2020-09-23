@@ -1,6 +1,6 @@
 import { GraphQLNonNull, GraphQLInt } from "graphql";
 import { fakeDatabase } from "../../FakeDatabase";
-import { Author } from "../types/Author";
+import { Post } from "../types/Post";
 
 export default {
   post: {

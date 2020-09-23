@@ -1,4 +1,5 @@
 import { GraphQLObjectType, GraphQLString, GraphQLList } from "graphql";
+import { Post } from "./Post";
 import { fakeDatabase } from "../../FakeDatabase";
 
 export const Author = new GraphQLObjectType({
